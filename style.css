@@ -22,8 +22,32 @@ body {
  height: 400px;
  margin: auto;
  border: 5px solid black;
- background: rgb(64, 153, 217);
+ background: linear-gradient(DeepSkyBlue, LightSkyBlue, rgb(168, 206, 240));
  overflow: hidden; /* contain objects "on-screen" */
+}
+
+#moana {
+    width: 820px;
+    /* Use RELATIVE positioning! */
+    position:relative;
+    top: 0px;
+    left: -100px;
+    z-index: 10;
+    animation: move-boat 3s infinite linear;
+    animation-direction:alternate;
+}
+
+@keyframes move-boat {
+
+0% {
+    transform: rotate(0deg);
+}
+50% {
+    transform: rotate(-20deg);
+}
+100% {
+    transform: rotate(20deg);
+}
 }
 
 
