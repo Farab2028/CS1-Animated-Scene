@@ -37,6 +37,28 @@ body {
     animation-direction:alternate;
 }
 
+#splash {
+    width: 500px;
+    position: relative;
+    top: -300px;
+    left: 0px;
+    z-index: 10s;
+    animation: move-splash 3s infinite linear;
+}
+
+@keyframes move-splash {
+
+0% {
+    transform: translate(0px, 0px);
+}
+50% {
+    transform: translate(0px, -50px);
+}
+100% {
+    transform: translate(0px, 0px);
+}
+}
+
 @keyframes move-boat {
 
 0% {
